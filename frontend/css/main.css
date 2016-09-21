@@ -18,7 +18,12 @@ body {
 }
 
 /*NAV BAR*/
-
+.left-nav-links{
+  margin-left: 10%;
+}
+.right-nav-links{
+  margin-right: 10%;
+}
 /*END NAV BAR*/
 
 
