@@ -19,10 +19,13 @@ body {
 
 /*NAV BAR*/
 .left-nav-links{
-  margin-left: 10%;
+  margin-left: 15%;
 }
 .right-nav-links{
-  margin-right: 10%;
+  margin-right: 15%;
+}
+#slide-out{
+  width: 60%;
 }
 /*END NAV BAR*/
 
