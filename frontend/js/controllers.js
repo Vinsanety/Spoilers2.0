@@ -2,6 +2,9 @@ angular.module('Spoilers.controllers', [])
 
 .controller('homeController', ['$http', '$scope', '$state', function($http, $scope, $state) {
   console.log('home test');
+  $(document).ready(function(){
+    $('.parallax').parallax();
+  });
 }])
 
 .controller('bioController', ['$http', '$scope', '$state', function($http, $scope, $state) {
@@ -32,7 +35,7 @@ angular.module('Spoilers.controllers', [])
         // console.log(movieData);
 
 
-        // BELOW IS OLD CODE 
+        // BELOW IS OLD CODE
         // //adds the title of most recent track to the DOM
         // $('#thumbnailContainer').append('<h1>'+title+'</h1>');
         // //Appending all Posters to DOM
