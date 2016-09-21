@@ -31,7 +31,12 @@ h1{
 #slide-out{
   width: 60%;
 }
+#nav-dropdown-divider-header{
+  color: #29b6f6;
+  margin: 10% 0 0 10%;
+}
 /*END NAV BAR*/
+
 
 /*HOME PAGE*/
 #index-banner{
@@ -57,9 +62,6 @@ h1{
 
 
 /*MOVIES PAGE*/
-#movies-header{
-
-}
 #movies-subheader{
   color: #757575;
   margin: 0;
@@ -71,53 +73,6 @@ h1{
   height: 200px;
   width: auto;
 }
-#movieThumbnails{
-  height: 700px;
-  width: auto;
-}
-
-
-/*TAKEN FROM OLD SITE*/
-#leftDiv{
-  width: 50%;
-  height: 86vh;
-  float: left;
-  align-items: center;
-  display: flex;
-}
-#moviesSpoiled{
-  width: 90%;
-  height: 69%;
-  margin-left: 5%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-#rightDiv{
-  width:48%;
-  /*height: 100vh;*/
-  text-align: center;
-  margin-left: 1%;
-  overflow: scroll;
-}
-#rightDiv h1{
-  margin: 3vh 0 0 0;
-  color: #C58847;
-  text-shadow: 2px 2px black;
-}
-#rightDiv h5{
-  margin: 0;
-  color: #C58847;
-}
-#thumbnailContainer{
-  margin: 0;
-  text-align: center;
-  color: #C58847;
-  font-weight: bolder;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  display: inline-block;
-}
-/*TAKEN FROM OLD SITE*/
-
 /*END MOVIES PAGE*/
 
 
