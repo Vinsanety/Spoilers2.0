@@ -1,21 +1,26 @@
 <div class="container moviesContainer">
   <div class="row">
-    <div class="col-lg-12">
-      <h1 class="page-header">Spoiled! Movies</h1>
-      <h5 class='align right'>If you like it, we'll ruin it</h5>
-      <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p>
+    <div class="col s12 m12 l12">
+      <h1 id="movies-header">Spoiled! Movies
+      <h5 class='align right' id='movies-subheader'>If you like it, we'll ruin it</h5>
+      <!-- <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p> -->
     </div>
   </div>
 
   <hr>
   <br>
+
   <div class="row">
-    <h6 class='col-lg-6'>Search Spoiled! Movies: </h6>
-    <div class="col-lg-6">
-      <div class="input-group">
-        <input ng-model='searchBox'type="text" class="form-control" placeholder="Movie Search...">
+    <form class="col s12">
+      <div class="row">
+        <h6 class='col s12 m12 l12'>Have we spoiled it? </h6>
+        <div class="input-field col s12 m8 l6">
+          <i class="material-icons prefix">search</i>
+          <input ng-model='searchBox' id="autocomplete-input" type="text" class="autocomplete">
+          <label for="autocomplete-input">Movie Search...</label>
+        </div>
       </div>
-    </div>
+    </form>
   </div>
 
   <div class="row">

@@ -13,11 +13,22 @@ angular.module('Spoilers.controllers', [])
 
 .controller('moviesController', ['$http', '$scope', '$state', function($http, $scope, $state) {
   console.log('movie test');
+
+  // AUTOCOMPLETE FOR SEARCH
+  $('input.autocomplete').autocomplete({
+      data: {
+        "Apple": null,
+        "Microsoft": null,
+        "Google": null
+      }
+    });
+
   $http.get('https://api.soundcloud.com/playlists/235506624?client_id=f4f2237e0ee1500764af3532c6bc5e13').then(function(data) {
     var data = data.data.tracks;
     // console.log(data);
     //Scope array of objects to populate thumbnails
     $scope.movieCollection = [];
+    console.log($scope.movieCollection);
 
     //Works the soundcloud api down to the splitting the title of our tracks to before the dash
     $(data).each(function(i) {
@@ -32,7 +43,7 @@ angular.module('Spoilers.controllers', [])
         var movieData = movie.data;
         //Pushes movie data object into array movieCollection
         $scope.movieCollection.push(movieData)
-        // console.log(movieData);
+
 
 
         // BELOW IS OLD CODE as of 08/21/16

@@ -16,6 +16,10 @@ body {
   font-family: "ITC Benguiat";
   /*background-color: blue;*/
 }
+h1{
+  color: #f9a825;
+}
+
 
 /*NAV BAR*/
 .left-nav-links{
@@ -53,8 +57,18 @@ body {
 
 
 /*MOVIES PAGE*/
+#movies-header{
+
+}
+#movies-subheader{
+  color: #757575;
+  margin: 0;
+  padding: 0;
+}
 #thumbnailPic{
-  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
   width: auto;
 }
 #movieThumbnails{
