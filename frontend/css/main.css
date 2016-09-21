@@ -1,0 +1,115 @@
+@import url(//db.onlinewebfonts.com/c/aba29c74d9c0c9e0e7f7b612a9e899c7?family=ITC+Benguiat);
+
+@font-face {font-family: "ITC Benguiat";
+    src: url("//db.onlinewebfonts.com/t/aba29c74d9c0c9e0e7f7b612a9e899c7.eot");
+    src: url("//db.onlinewebfonts.com/t/aba29c74d9c0c9e0e7f7b612a9e899c7.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/aba29c74d9c0c9e0e7f7b612a9e899c7.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/aba29c74d9c0c9e0e7f7b612a9e899c7.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/aba29c74d9c0c9e0e7f7b612a9e899c7.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/aba29c74d9c0c9e0e7f7b612a9e899c7.svg#ITC Benguiat") format("svg");
+}
+*{
+  margin: 0;
+}
+
+body {
+  font-family: "ITC Benguiat";
+  /*background-color: blue;*/
+}
+
+/*NAV BAR*/
+
+/*END NAV BAR*/
+
+
+/*BIO PAGE*/
+.container{
+  /*width: 90%;*/
+}
+.bioText{
+  font-size: 14px;
+}
+.bioPic{
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  height: auto;
+}
+/*END BIO PAGE*/
+
+
+/*MOVIES PAGE*/
+#thumbnailPic{
+  height: 400px;
+  width: auto;
+}
+#movieThumbnails{
+  height: 700px;
+  width: auto;
+}
+
+
+/*TAKEN FROM OLD SITE*/
+#leftDiv{
+  width: 50%;
+  height: 86vh;
+  float: left;
+  align-items: center;
+  display: flex;
+}
+#moviesSpoiled{
+  width: 90%;
+  height: 69%;
+  margin-left: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#rightDiv{
+  width:48%;
+  /*height: 100vh;*/
+  text-align: center;
+  margin-left: 1%;
+  overflow: scroll;
+}
+#rightDiv h1{
+  margin: 3vh 0 0 0;
+  color: #C58847;
+  text-shadow: 2px 2px black;
+}
+#rightDiv h5{
+  margin: 0;
+  color: #C58847;
+}
+#thumbnailContainer{
+  margin: 0;
+  text-align: center;
+  color: #C58847;
+  font-weight: bolder;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: inline-block;
+}
+/*TAKEN FROM OLD SITE*/
+
+/*END MOVIES PAGE*/
+
+
+
+/*CONTACT PAGE*/
+.contactList{
+  list-style: none;
+}
+.divLinks{
+  list-style: none;
+}
+#nicholsonGif{
+  height: 100%;
+  width: 100%;
+  margin: 0 auto 0 auto;
+}
+/*END CONTACT PAGE*/
+
+
+
+.footer{
+  text-align: center;
+}

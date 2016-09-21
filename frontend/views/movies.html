@@ -1,0 +1,46 @@
+<div class='navFixer'></div>
+
+  <div class="container moviesContainer">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="page-header">Spoiled! Movies
+          <small>If you like it, we'll ruin it</small>
+        </h1>
+        <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p>
+      </div>
+    </div>
+
+    <hr>
+    <div class="row">
+      <h1 class='col-lg-6'>Search Spoiled! Movies: </h1>
+      <div class="col-lg-6">
+        <div class="input-group">
+          <input ng-model='searchBox'type="text" class="form-control" placeholder="Search for...">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">Go!</button>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 col-md-4 col-l-4" ng-repeat='movie in movieCollection |filter:searchBox'>
+        <div class="thumbnail" id='movieThumbnails'>
+          <img id='thum bnailPic' src="{{movie.Poster}}" alt="...">
+          <div class="caption">
+            <h3 id='thumbnailLabel'>{{movie.Title}}</h3>
+            <p>IMDb Rating: {{movie.imdbRating}}</p>
+            <p>Plot: {{movie.Plot}}</p>
+            <!-- <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- <div id='thumbnailContainer' class='container'>
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb"></div>
+      </div>
+    </div> -->
