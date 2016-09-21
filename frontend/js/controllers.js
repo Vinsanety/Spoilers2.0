@@ -35,7 +35,7 @@ angular.module('Spoilers.controllers', [])
         // console.log(movieData);
 
 
-        // BELOW IS OLD CODE
+        // BELOW IS OLD CODE as of 08/21/16
         // //adds the title of most recent track to the DOM
         // $('#thumbnailContainer').append('<h1>'+title+'</h1>');
         // //Appending all Posters to DOM

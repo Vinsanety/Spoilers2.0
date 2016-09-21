@@ -1,46 +1,48 @@
-<div class='navFixer'></div>
+<div class="container moviesContainer">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header">Spoiled! Movies</h1>
+      <h5 class='align right'>If you like it, we'll ruin it</h5>
+      <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p>
+    </div>
+  </div>
 
-  <div class="container moviesContainer">
-    <div class="row">
-      <div class="col-lg-12">
-        <h1 class="page-header">Spoiled! Movies
-          <small>If you like it, we'll ruin it</small>
-        </h1>
-        <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p>
+  <hr>
+  <br>
+  <div class="row">
+    <h6 class='col-lg-6'>Search Spoiled! Movies: </h6>
+    <div class="col-lg-6">
+      <div class="input-group">
+        <input ng-model='searchBox'type="text" class="form-control" placeholder="Movie Search...">
       </div>
     </div>
+  </div>
 
-    <hr>
-    <div class="row">
-      <h1 class='col-lg-6'>Search Spoiled! Movies: </h1>
-      <div class="col-lg-6">
-        <div class="input-group">
-          <input ng-model='searchBox'type="text" class="form-control" placeholder="Search for...">
-          <span class="input-group-btn">
-            <button class="btn btn-default" type="button">Go!</button>
-          </span>
+  <div class="row">
+    <div class="col s12 m6 l4" ng-repeat='movie in movieCollection | filter:searchBox'>
+      <div class="card sticky-action">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" id='thumbnailPic' src="{{movie.Poster}}" alt="Poster N/A">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
+          <p><a href="#">{{movie.Title}}</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">{{movie.Title}}<i class="material-icons right">close</i></span>
+          <p>IMDb Rating: {{movie.imdbRating}}</p>
+          <br>
+          <p>Plot: {{movie.Plot}}</p>
         </div>
       </div>
     </div>
+  </div>
 
+</div>
+
+
+  <!-- <div id='thumbnailContainer' class='container'>
     <div class="row">
-      <div class="col-xs-12 col-sm-4 col-md-4 col-l-4" ng-repeat='movie in movieCollection |filter:searchBox'>
-        <div class="thumbnail" id='movieThumbnails'>
-          <img id='thum bnailPic' src="{{movie.Poster}}" alt="...">
-          <div class="caption">
-            <h3 id='thumbnailLabel'>{{movie.Title}}</h3>
-            <p>IMDb Rating: {{movie.imdbRating}}</p>
-            <p>Plot: {{movie.Plot}}</p>
-            <!-- <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p> -->
-          </div>
-        </div>
-      </div>
+      <div class="col-lg-3 col-md-4 col-xs-6 thumb"></div>
     </div>
-
-    <hr>
-
-    <!-- <div id='thumbnailContainer' class='container'>
-      <div class="row">
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb"></div>
-      </div>
-    </div> -->
+  </div> -->

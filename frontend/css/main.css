@@ -29,6 +29,12 @@ body {
 }
 /*END NAV BAR*/
 
+/*HOME PAGE*/
+#index-banner{
+  height: 50vh;
+}
+/*END HOME PAGE*/
+
 
 /*BIO PAGE*/
 .container{
