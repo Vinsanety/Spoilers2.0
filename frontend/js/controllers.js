@@ -41,22 +41,11 @@ angular.module('Spoilers.controllers', [])
       $http.get('https://www.omdbapi.com/?t='+title).then(function (movie) {
       // variable to access the API object
         var movieData = movie.data;
-        //Pushes movie data object into array movieCollection
+        //Pushes movie data object into array movieCollection and adds a holder image if Poster doesn't exist within API
+          if (movieData.Poster === 'N/A') {
+            movieData.Poster = 'images/Seinfeld-No-Img.gif'
+          }
         $scope.movieCollection.push(movieData)
-
-
-
-        // BELOW IS OLD CODE as of 08/21/16
-        // //adds the title of most recent track to the DOM
-        // $('#thumbnailContainer').append('<h1>'+title+'</h1>');
-        // //Appending all Posters to DOM
-        // var poster = document.createElement('img');
-        // $(poster).attr('src', movieData.Poster);
-        // $('#thumbnailContainer').append(poster);
-        // //Appending al IMDB Ratings:
-        // $('#thumbnailContainer').append('<p>'+'IMDB Rating: '+movieData.imdbRating+'</p>');
-        // //Appending all Plots:
-        // $('#thumbnailContainer').append('<p>'+'Plot: '+movieData.Plot+'</p>');
       })
     })
   })

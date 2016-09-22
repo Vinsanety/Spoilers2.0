@@ -55,8 +55,8 @@ h1{
 .bioPic{
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
-  height: auto;
+  width: 30%;
+  height: 30%;
 }
 /*END BIO PAGE*/
 
@@ -93,6 +93,6 @@ h1{
 
 
 
-.footer{
+.footer-text{
   text-align: center;
 }
