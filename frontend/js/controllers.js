@@ -14,21 +14,23 @@ angular.module('Spoilers.controllers', [])
 .controller('moviesController', ['$http', '$scope', '$state', function($http, $scope, $state) {
   console.log('movie test');
 
-  // AUTOCOMPLETE FOR SEARCH
-  $('input.autocomplete').autocomplete({
-      data: {
-        "Apple": null,
-        "Microsoft": null,
-        "Google": null
-      }
-    });
-
   $http.get('https://api.soundcloud.com/playlists/235506624?client_id=f4f2237e0ee1500764af3532c6bc5e13').then(function(data) {
     var data = data.data.tracks;
     // console.log(data);
     //Scope array of objects to populate thumbnails
     $scope.movieCollection = [];
     console.log($scope.movieCollection);
+    $scope.titleCollection = {};
+    console.log($scope.titleCollection);
+
+    // AUTOCOMPLETE FOR SEARCH
+    $('input.autocomplete').autocomplete({
+        data: {
+          "Apple": null,
+          "Google": null,
+          "Time Bandits": 'http://ia.media-imdb.com/images/M/MV5BMTg2MDYwMzM0NF5BMl5BanBnXkFtZTcwODI3MTQ5OQ@@._V1_SX300.jpg'
+        }
+      });
 
     //Works the soundcloud api down to the splitting the title of our tracks to before the dash
     $(data).each(function(i) {
@@ -45,12 +47,11 @@ angular.module('Spoilers.controllers', [])
           if (movieData.Poster === 'N/A') {
             movieData.Poster = 'images/Confused-Travolta.gif'
           }
-        $scope.movieCollection.push(movieData)
+        $scope.movieCollection.push(movieData);
+        $scope.titleCollection[movieData.Title] = movieData.Poster;
       })
     })
   })
-  //below adds the entire Playlist to the DOM
-  $('#iframe').attr('src','https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/235506624&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true')
 }])
 
 .controller('contactController', ['$http', '$scope', '$state', function($http, $scope, $state) {
