@@ -64,10 +64,11 @@ h1{
   font-size: 14px;
 }
 .bioPic{
-  margin-left: auto;
-  margin-right: auto;
   width: 30%;
   height: 30%;
+}
+.bio-card-content-container{
+  padding: 5%;
 }
 /*END BIO PAGE*/
 
