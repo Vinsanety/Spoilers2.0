@@ -21,6 +21,7 @@ h1{
 }
 
 
+
 /*NAV BAR*/
 .left-nav-links{
   margin-left: 15%;
@@ -90,11 +91,27 @@ h1{
 
 
 /*CONTACT PAGE*/
+#contact-subheader{
+  color: #757575;
+  margin: 0;
+  padding: 0;
+}
+#contactHeader{
+  color: #f9a825;
+}
 .contactList{
+  color: #757575;
   list-style: none;
 }
-.divLinks{
+.contact-links-List{
   list-style: none;
+  color: #757575;
+}
+#contact-links{
+  color: #757575;
+}
+#contact-links:hover{
+  color: #ff5252;
 }
 #nicholsonGif{
   height: 100%;
@@ -106,5 +123,7 @@ h1{
 
 
 .footer-text{
+  margin-top: 1%;
   text-align: center;
+  color: #757575;
 }
