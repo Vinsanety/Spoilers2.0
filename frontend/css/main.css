@@ -42,6 +42,17 @@ h1{
 #index-banner{
   height: 50vh;
 }
+#home-soundcloud-div{
+  padding: 0;
+  margin-right: 2%;
+}
+#home-friendsIntro-div{
+  padding: 0;
+  margin-left: 2%;
+}
+#home-friendsIntro-text{
+  margin-top: 20%;
+}
 /*END HOME PAGE*/
 
 

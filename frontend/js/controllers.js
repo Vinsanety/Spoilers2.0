@@ -43,7 +43,7 @@ angular.module('Spoilers.controllers', [])
         var movieData = movie.data;
         //Pushes movie data object into array movieCollection and adds a holder image if Poster doesn't exist within API
           if (movieData.Poster === 'N/A') {
-            movieData.Poster = 'images/Seinfeld-No-Img.gif'
+            movieData.Poster = 'images/Confused-Travolta.gif'
           }
         $scope.movieCollection.push(movieData)
       })
