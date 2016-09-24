@@ -33,7 +33,7 @@ h1{
   /*width: 60%;*/
 }
 #nav-dropdown-divider-header{
-  color: #29b6f6;
+  color: #42a5f5;
   margin: 10% 0 0 10%;
 }
 /*END NAV BAR*/
@@ -85,6 +85,27 @@ h1{
   margin-right: auto;
   height: 200px;
   width: auto;
+}
+#movie-card-director{
+  color: #f9a825;
+}
+#movie-card-title{
+  color: #42a5f5;
+}
+#movie-card-icon{
+  color: #f9a825;
+}
+.card-ratings{
+  color: #757575;
+}
+
+/*NG-CLASS attempt class below*/
+/*.movie-ratings-red{
+  color: red;
+}*/
+
+#movie-card-plot{
+  font-size: 14px;
 }
 /*END MOVIES PAGE*/
 

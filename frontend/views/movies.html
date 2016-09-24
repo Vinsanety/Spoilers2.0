@@ -29,14 +29,16 @@
           <img class="activator" id='thumbnailPic' src="{{movie.Poster}}" alt="Poster N/A">
         </div>
         <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
-          <p><a href="#">{{movie.Title}}</a></p>
+          <span class="card-title activator" id='movie-card-icon'><i class="material-icons right">subject</i></span>
+          <p><a href='' class='activator'>{{movie.Title}}</a></p>
         </div>
         <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">{{movie.Title}}<i class="material-icons right">close</i></span>
-          <p>IMDb Rating: {{movie.imdbRating}}</p>
-          <br>
-          <p>Plot: {{movie.Plot}}</p>
+          <span class="card-title" id='movie-card-title'>{{movie.Title}}<i class="material-icons right">close</i></span>
+          <p id='movie-card-director'>Director: {{movie.Director}}</p>
+          <p class='left card-ratings'>IMDb Rating: {{movie.imdbRating}}</p>
+          <p class='right card-ratings'>Metascore: {{movie.Metascore}}</p>
+          <br><br>
+          <p id='movie-card-plot'>Plot: {{movie.Plot}}</p>
         </div>
       </div>
     </div>
