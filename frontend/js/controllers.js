@@ -1,18 +1,16 @@
 angular.module('Spoilers.controllers', [])
 
 .controller('homeController', ['$http', '$scope', '$state', function($http, $scope, $state) {
-  console.log('home test');
   $(document).ready(function(){
     $('.parallax').parallax();
   });
 }])
 
 .controller('bioController', ['$http', '$scope', '$state', function($http, $scope, $state) {
-  console.log('bio test');
+
 }])
 
 .controller('moviesController', ['$http', '$scope', '$state', function($http, $scope, $state) {
-  console.log('movie test');
 
   $http.get('https://api.soundcloud.com/playlists/235506624?client_id=f4f2237e0ee1500764af3532c6bc5e13').then(function(data) {
     var data = data.data.tracks;
@@ -55,5 +53,5 @@ angular.module('Spoilers.controllers', [])
 }])
 
 .controller('contactController', ['$http', '$scope', '$state', function($http, $scope, $state) {
-  console.log('contact test');
+
 }])
