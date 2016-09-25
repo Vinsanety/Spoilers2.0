@@ -1,13 +1,16 @@
 angular.module('Spoilers.controllers', [])
 
 .controller('homeController', ['$http', '$scope', '$state', function($http, $scope, $state) {
-  $(document).ready(function(){
+  angular.element(document).ready(function () {
     $('.parallax').parallax();
-  });
+
+  })
 }])
 
 .controller('bioController', ['$http', '$scope', '$state', function($http, $scope, $state) {
+  angular.element(document).ready(function () {
 
+  })
 }])
 
 .controller('moviesController', ['$http', '$scope', '$state', function($http, $scope, $state) {
@@ -53,5 +56,10 @@ angular.module('Spoilers.controllers', [])
 }])
 
 .controller('contactController', ['$http', '$scope', '$state', function($http, $scope, $state) {
+  angular.element(document).ready(function () {
+    // TWITTER EMBED
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 
+    
+  });
 }])
