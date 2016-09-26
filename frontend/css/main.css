@@ -40,19 +40,36 @@ h1{
 
 
 /*HOME PAGE*/
-#index-banner{
-  height: 50vh;
+#home-para-banner{
+  height: 55vh;
 }
 #home-soundcloud-div{
   padding: 0;
   margin-right: 2%;
+}
+#home-movies-btn{
+  margin-top: 5%;
 }
 #home-friendsIntro-div{
   padding: 0;
   margin-left: 2%;
 }
 #home-friendsIntro-text{
-  margin-top: 20%;
+  margin-top: 10%;
+  color: #757575;
+}
+.home-top-para-heading{
+  color: #42a5f5;
+}
+.home-top-para-icon-container{
+  color: #f9a825;
+  margin: 3% 0 3% 0;
+}
+#home-quote-header{
+  color: #42a5f5;
+}
+#home-quote-text{
+  color: #757575;
 }
 /*END HOME PAGE*/
 
@@ -98,7 +115,7 @@ h1{
   margin: 0;
   padding: 0;
 }
-#thumbnailPic{
+#movie-thumbnailPic{
   margin-left: auto;
   margin-right: auto;
   height: 200px;

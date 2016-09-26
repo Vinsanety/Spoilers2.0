@@ -11,7 +11,7 @@ angular.module('Spoilers.controllers', [])
   angular.element(document).ready(function () {
     $('.modal-trigger').leanModal({
        dismissible: true, // Modal can be dismissed by clicking outside of the modal
-       
+
     });
 
   })
@@ -25,13 +25,14 @@ angular.module('Spoilers.controllers', [])
     //Scope array of objects to populate thumbnails
     $scope.movieCollection = [];
     console.log($scope.movieCollection);
+    //Made titleCollection for the autocomplete work *unfinished*
     $scope.titleCollection = {};
     console.log($scope.titleCollection);
 
     for (var i = 0; i < data.length; i++) {
-      var stream_url = data[i].stream_url;
-      console.log(stream_url);
-      $scope.movieCollection[stream_url] = 'stream_url';
+      $scope.stream_url = data[i].stream_url;
+      // $scope.movieCollection['stream_url'] = $scope.stream_url;
+      console.log($scope.stream_url);
     }
 
     // AUTOCOMPLETE FOR SEARCH
