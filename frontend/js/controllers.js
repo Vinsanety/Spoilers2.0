@@ -9,6 +9,10 @@ angular.module('Spoilers.controllers', [])
 
 .controller('bioController', ['$http', '$scope', '$state', function($http, $scope, $state) {
   angular.element(document).ready(function () {
+    $('.modal-trigger').leanModal({
+       dismissible: true, // Modal can be dismissed by clicking outside of the modal
+       
+    });
 
   })
 }])
@@ -17,12 +21,18 @@ angular.module('Spoilers.controllers', [])
 
   $http.get('https://api.soundcloud.com/playlists/235506624?client_id=f4f2237e0ee1500764af3532c6bc5e13').then(function(data) {
     var data = data.data.tracks;
-    // console.log(data);
+
     //Scope array of objects to populate thumbnails
     $scope.movieCollection = [];
     console.log($scope.movieCollection);
     $scope.titleCollection = {};
     console.log($scope.titleCollection);
+
+    for (var i = 0; i < data.length; i++) {
+      var stream_url = data[i].stream_url;
+      console.log(stream_url);
+      $scope.movieCollection[stream_url] = 'stream_url';
+    }
 
     // AUTOCOMPLETE FOR SEARCH
     $('input.autocomplete').autocomplete({
@@ -60,6 +70,6 @@ angular.module('Spoilers.controllers', [])
     // TWITTER EMBED
     !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 
-    
+
   });
 }])

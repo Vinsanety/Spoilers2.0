@@ -63,13 +63,31 @@ h1{
 }
 .bioText{
   font-size: 14px;
+  color: #757575;
 }
 .bioPic{
   width: 30%;
   height: 30%;
+  margin-top: 5%;
 }
 .bio-card-content-container{
-  padding: 5%;
+  position: relative;
+  padding: 0 5% 0 5%;
+}
+.bio-stats-btn{
+  position: absolute;
+  margin-top: 3%;
+  bottom: 0;
+}
+.bio-Producer-Name-Header{
+  color: #42a5f5;
+  margin: 0 0 3% 0;
+}
+.bio-modal-header{
+  color: #f9a825;
+}
+.bio-modal-stat-col{
+  color: #757575;
 }
 /*END BIO PAGE*/
 
