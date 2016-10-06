@@ -25,45 +25,38 @@
         </ul>
         <br>
       </div>
-      <form class="col s12 m12 l9">
+      <form class="col s12 m12 l9" method="POST" action="http://formspree.io/podcastspoilers@gmail.com">
       <div class="row">
         <div class="input-field col s6">
           <i class="material-icons prefix" id='contact-form-icon'>account_circle</i>
-          <input id="name" type="text" class="validate">
+          <input id="name" type="text" class="validate" name="name">
           <label for="name">Name</label>
         </div>
         <div class="input-field col s6">
-          <i class="material-icons prefix" id='contact-form-icon'>info</i>
-          <input id="subject" type="text" class="validate">
-          <label for="subject">Subject</label>
-        </div>
-        <div class="input-field col s12">
-          <i class="material-icons prefix" id='contact-form-icon'>create</i>
-          <textarea id="textarea1" class="materialize-textarea"></textarea>
-          <label for="textarea1">Say it don't spray it</label>
+          <i class="material-icons prefix" id='contact-form-icon'>email</i>
+          <input id="email" type='email' class="validate" name="email">
+          <label for="email" data-error="Please Enter Valid Email" data-success="Email Valid">Email</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <i class="material-icons prefix" id='contact-form-icon'>email</i>
-          <input id="email" type="email" class="validate">
-          <label for="email">Email</label>
+          <i class="material-icons prefix" id='contact-form-icon'>info</i>
+          <input id="subject" type="text" class="validate" name="subject">
+          <label for="subject">Subject</label>
         </div>
       </div>
-      <a onclick="Materialize.toast('Sent, Baby!', 4000)">
-        <button class="btn waves-effect waves-light right" id='contact-submit-btn' type="submit" name="action">Send
-          <i class="material-icons right">send</i>
-        </button>
-      </a>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix" id='contact-form-icon'>create</i>
+          <textarea id="textarea" class="materialize-textarea" name="textarea"></textarea>
+          <label for="textarea">Say it, don't spray it</label>
+        </div>
+      </div>
+      <button class="btn waves-effect waves-light right" id='contact-submit-btn' type="submit" name="action">
+        <input type='submit' value='send' name='btn' onclick="Materialize.toast('Sent, Baby!', 4000)">
+        <i class="material-icons right">send</i>
+      </button>
     </form>
-    <!-- <div class="col s12 m6 l6 center">
-      <h4 id='contactHeader'>Check Us Out At:</h4>
-        <ul>
-          <li class='contact-links-List'><a id='contact-links' target='blank' href='https://itunes.apple.com/us/podcast/spoilers!/id1099500074?mt=2'>iTunes</a></li>
-          <li class='contact-links-List'><a id='contact-links' target='blank' href='https://soundcloud.com/spoilers-105018977/'> Soundcloud</a></li>
-          <li class='contact-links-List'><a id='contact-links' target='blank' href='https://www.reddit.com/user/podcastspoilers'> Reddit</a></li>
-        </ul>
-      </div> -->
   </div>
 
   <hr><br>
