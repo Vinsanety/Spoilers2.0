@@ -78,8 +78,8 @@ h1{
 
 
 /*BIO PAGE*/
-.container{
-  /*width: 90%;*/
+#bio-crew-header{
+  color: #757575;
 }
 .bioText{
   font-size: 14px;
@@ -168,9 +168,10 @@ h1{
 }
 #contact-links{
   color: #757575;
+  font-size: 24px;
 }
 #contact-links:hover{
-  color: #ff5252;
+  color: #2196F3;
 }
 #nicholsonGif{
   height: 100%;
