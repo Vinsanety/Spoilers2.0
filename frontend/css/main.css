@@ -206,6 +206,14 @@ h1{
 
 
 
+
+/*FOOTER*/
+#footer{
+  background-color: #9e9e9e;
+  /*background-color: #757575;*/
+  margin-top: 0;
+  padding-top: 0;
+}
 .footer-text{
   margin-top: 1%;
   text-align: center;
