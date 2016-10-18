@@ -61,6 +61,9 @@ h1{
   margin-top: 10%;
   color: #757575;
 }
+.home-quote-row{
+  height: auto;
+}
 .home-top-para-heading{
   color: #42a5f5;
 }
@@ -78,7 +81,7 @@ h1{
 .home-logo-parallax-small {
   background-image: url(/images/Spoilers_Logo.jpeg);
   background-attachment: fixed;
-  background-size: contain;
+  background-size: cover;
   background-position: center center;
   height: 35vh;
 }
