@@ -78,7 +78,7 @@ h1{
 .home-logo-parallax-small {
   background-image: url(/images/Spoilers_Logo.jpeg);
   background-attachment: fixed;
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
   height: 35vh;
 }
