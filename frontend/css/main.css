@@ -71,6 +71,10 @@ h1{
   color: #f9a825;
   margin: 3% 0 3% 0;
 }
+.small-home-logo{
+  width: 100%;
+  height: auto;
+}
 #home-quote-header{
   color: #42a5f5;
 }
