@@ -71,32 +71,11 @@ h1{
   color: #f9a825;
   margin: 3% 0 3% 0;
 }
-.home-logo-parallax {
-  background-image: url(/images/Spoilers_Logo.jpeg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center center;
-  height: 50vh;
-}
-.home-logo-parallax-small {
-  background-image: url(/images/Spoilers_Logo.jpeg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center center;
-  height: 35vh;
-}
 #home-quote-header{
   color: #42a5f5;
 }
 #home-quote-text{
   color: #757575;
-}
-.home-cinemagraph-parallax {
-  background-image: url(/images/parallax/Pulp-Fiction1.gif);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center center;
-  height: 50vh;
 }
 /*END HOME PAGE*/
 
