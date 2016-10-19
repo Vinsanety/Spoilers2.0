@@ -30,7 +30,7 @@ h1{
   margin-right: 15%;
 }
 #slide-out{
-  /*width: 60%;*/
+  width: auto;
 }
 #nav-dropdown-divider-header{
   color: #42a5f5;
