@@ -48,17 +48,17 @@ h1{
 }
 #home-soundcloud-div{
   padding: 0;
-  margin-right: 2%;
+  float: left;
 }
 #home-movies-btn{
   margin-top: 5%;
 }
 #home-friendsIntro-div{
   padding: 0;
-  margin-left: 2%;
+  float: right;
 }
 #home-friendsIntro-text{
-  margin-top: 10%;
+  margin-top: 5%;
   color: #757575;
 }
 .home-quote-row{
