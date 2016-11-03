@@ -1,5 +1,7 @@
 # Spoilers2.0
 
-Spoilers! is a movie podcast that reviews new and old film. 
+## Visit [Spoilers!](https://PodcastSpoilers.com)
 
-Built using JavaScript, jQuery, AngularJS, Node.js, and Google Material Design practices as an individual project. 
+Spoilers! is a movie podcast that reviews new and old film.
+
+Built using JavaScript, jQuery, AngularJS, Node.js, and Google Material Design practices as an individual project.
