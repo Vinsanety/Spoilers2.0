@@ -96,6 +96,10 @@ h1{
 .quoteScrollFireList{
   opacity: 1;
 }
+#jesusGif{
+  -webkit-filter: brightness(200%); /* Safari */
+  filter: brightness(200%);
+}
 /*END HOME PAGE*/
 
 
