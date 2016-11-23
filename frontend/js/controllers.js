@@ -4,6 +4,21 @@ angular.module('Spoilers.controllers', [])
   angular.element(document).ready(function () {
     $('.parallax').parallax();
 
+    var options = [
+    {
+      selector: '#QuoteOfTheDay-ScrollFire-Inititator', offset: 50, callback: function(el) {
+        Materialize.toast("Spoilers! Quote of the Day!", 1500 );
+      }
+    },
+    {
+      selector: '#QuoteOfTheDay-ScrollFire-Inititator', offset: 400, callback: function(el) {
+        Materialize.showStaggeredList($(el));
+      }
+    }
+   ];
+   Materialize.scrollFire(options);
+
+
   })
 }])
 
