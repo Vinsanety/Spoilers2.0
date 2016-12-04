@@ -1,20 +1,19 @@
-@import url(//db.onlinewebfonts.com/c/aba29c74d9c0c9e0e7f7b612a9e899c7?family=ITC+Benguiat);
-
+/*@import url(//db.onlinewebfonts.com/c/aba29c74d9c0c9e0e7f7b612a9e899c7?family=ITC+Benguiat);
 @font-face {font-family: "ITC Benguiat";
-    src: url("//db.onlinewebfonts.com/t/aba29c74d9c0c9e0e7f7b612a9e899c7.eot");
-    src: url("//db.onlinewebfonts.com/t/aba29c74d9c0c9e0e7f7b612a9e899c7.eot?#iefix") format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/aba29c74d9c0c9e0e7f7b612a9e899c7.woff2") format("woff2"),
-    url("//db.onlinewebfonts.com/t/aba29c74d9c0c9e0e7f7b612a9e899c7.woff") format("woff"),
-    url("//db.onlinewebfonts.com/t/aba29c74d9c0c9e0e7f7b612a9e899c7.ttf") format("truetype"),
-    url("//db.onlinewebfonts.com/t/aba29c74d9c0c9e0e7f7b612a9e899c7.svg#ITC Benguiat") format("svg");
-}
+  src: url("//db.onlinewebfonts.com/t/aba29c74d9c0c9e0e7f7b612a9e899c7.eot");
+  src: url("//db.onlinewebfonts.com/t/aba29c74d9c0c9e0e7f7b612a9e899c7.eot?#iefix") format("embedded-opentype"),
+  url("//db.onlinewebfonts.com/t/aba29c74d9c0c9e0e7f7b612a9e899c7.woff2") format("woff2"),
+  url("//db.onlinewebfonts.com/t/aba29c74d9c0c9e0e7f7b612a9e899c7.woff") format("woff"),
+  url("//db.onlinewebfonts.com/t/aba29c74d9c0c9e0e7f7b612a9e899c7.ttf") format("truetype"),
+  url("//db.onlinewebfonts.com/t/aba29c74d9c0c9e0e7f7b612a9e899c7.svg#ITC Benguiat") format("svg");
+}*/
+
 *{
   margin: 0;
 }
-
-body {
-  font-family: "ITC Benguiat";
-  /*background-color: blue;*/
+body{
+  /*font-family: "ITC Benguiat";*/
+  font-family: 'Gloria Hallelujah', cursive;
 }
 h1{
   color: #f9a825;
