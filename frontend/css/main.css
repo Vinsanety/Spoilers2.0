@@ -55,7 +55,12 @@ h1{
   margin-bottom: 4%;
 }
 #home-para-banner{
-  height: 65vh;
+  height: 50vh;
+}
+@media only screen and (max-width: 390px) {
+  #home-para-banner {
+    height: 70vh;  
+  }
 }
 #home-soundcloud-div{
   padding: 0;
