@@ -32,8 +32,12 @@ h1{
   width: auto;
 }
 #nav-dropdown-divider-header{
+  font-weight: bolder;
   color: #42a5f5;
-  margin: 10% 0 0 10%;
+  margin: 10% 0 -15% 10%;
+}
+#nav-dropdown-divider-header:hover{
+  background-color: transparent;
 }
 #side-nav-menu-icon{
   margin-left: 2%;
@@ -59,7 +63,17 @@ h1{
 }
 @media only screen and (max-width: 390px) {
   #home-para-banner {
-    height: 70vh;  
+    height: 70vh;
+  }
+}
+@media only screen and (max-width: 700px) {
+  #home-para-banner {
+    height: 65vh;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #home-para-banner {
+    height: 60vh;
   }
 }
 #home-soundcloud-div{
