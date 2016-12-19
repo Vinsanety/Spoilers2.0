@@ -1,7 +1,8 @@
 angular.module('Spoilers', ['ui.router', 'Spoilers.controllers'])
 
-.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
-  $urlRouterProvider.otherwise('home')
+.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
+  $urlRouterProvider.otherwise('home');
+  $locationProvider.html5Mode(true);
   $stateProvider
     .state('home', {
       url: '/home',
