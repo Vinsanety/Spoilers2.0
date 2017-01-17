@@ -1,6 +1,6 @@
 angular.module('Spoilers.controllers', [])
 
-.controller('homeController', ['$http', '$scope', '$state', function($http, $scope, $state) {
+.controller('homeController', ['$http', '$scope', '$state', function($http, $scope, $state, Individual_Stats_Factory) {
   angular.element(document).ready(function () {
     $('.parallax').parallax();
 
@@ -15,9 +15,8 @@ angular.module('Spoilers.controllers', [])
         Materialize.showStaggeredList($(el));
       }
     }
-   ];
-   Materialize.scrollFire(options);
-
+  ];
+  Materialize.scrollFire(options);
 
   })
 }])
