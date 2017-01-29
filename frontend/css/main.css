@@ -261,6 +261,18 @@ h1{
 /*END CONTACT PAGE*/
 
 
+/*START STATS PAGE*/
+.highcharts-color-0 .highcharts-point{
+  fill: #2196F3;
+}
+.highcharts-color-1 .highcharts-point{
+  fill: #757575;
+}
+.highcharts-color-2 .highcharts-point{
+  fill: #F9A825;
+}
+/*END STATS PAGE*/
+
 
 
 /*FOOTER*/
