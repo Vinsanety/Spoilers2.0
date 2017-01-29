@@ -262,6 +262,9 @@ h1{
 
 
 /*START STATS PAGE*/
+.highcharts-container{
+  margin-top: 3em;
+}
 .highcharts-title text{
   font-size: 32px;
 }
