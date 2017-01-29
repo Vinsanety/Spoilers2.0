@@ -35,7 +35,13 @@
     <script type="text/javascript" src="/angular/ui-router.js"></script>
     <script src="js/app.js"></script>
     <script src="js/controllers.js" charset="utf-8"></script>
-    <script type="text/javascript" src="js/Individual_Stats_Factory.js"></script>
+    <script src="js/hostFactory.js" charset="utf-8"></script>
+    <script src="js/d3-Charts/test.js" charset="utf-8"></script>
+
+    <!-- High Charts CDN -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
     <!--Gets rid of # in URL-->
     <base href="/">
     <title>Spoilers!</title>
@@ -119,7 +125,7 @@
       <div class="footer-copyright">
         <div class="container">
         <a id='VahalaDesignsLink' href='https://VinceVahala.com' target="_blank">© 2017 Vahala Designs</a>
-        <a class="grey-text text-lighten-4 right" id='math-teacher-mark' href="#!">Math Teacher Mark Math Paper</a>
+        <a class="grey-text text-lighten-4 right" id='math-teacher-mark' ui-sref="stats">Math Teacher Mark Math Paper</a>
         </div>
       </div>
     </footer>

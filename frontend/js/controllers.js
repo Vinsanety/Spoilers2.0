@@ -1,10 +1,8 @@
-angular.module('Spoilers.controllers', [])
-
-.controller('homeController', ['$http', '$scope', '$state', function($http, $scope, $state, Individual_Stats_Factory) {
+app.controller('homeController', ['$http', '$scope', '$state', function($http, $scope, $state, IndividualStatsFactory) {
   angular.element(document).ready(function () {
     $('.parallax').parallax();
 
-    var options = [
+  var options = [
     {
       selector: '#QuoteOfTheDay-ScrollFire-Inititator', offset: 50, callback: function(el) {
         Materialize.toast("Spoilers! Quote of the Day!", 1500 );
@@ -21,17 +19,18 @@ angular.module('Spoilers.controllers', [])
   })
 }])
 
-.controller('bioController', ['$http', '$scope', '$state', function($http, $scope, $state) {
+app.controller('bioController', ['$http', '$scope', '$state', function($http, $scope, $state, hostFactory) {
   angular.element(document).ready(function () {
     $('.modal-trigger').leanModal({
        dismissible: true, // Modal can be dismissed by clicking outside of the modal
-
     });
+
+    console.log($scope.hostFactory);
 
   })
 }])
 
-.controller('moviesController', ['$http', '$scope', '$state', function($http, $scope, $state) {
+app.controller('moviesController', ['$http', '$scope', '$state', function($http, $scope, $state) {
 
   $http.get('https://api.soundcloud.com/playlists/235506624?client_id=f4f2237e0ee1500764af3532c6bc5e13').then(function(data) {
     var data = data.data.tracks;
@@ -80,7 +79,7 @@ angular.module('Spoilers.controllers', [])
   })
 }])
 
-.controller('contactController', ['$http', '$scope', '$state', function($http, $scope, $state) {
+app.controller('contactController', ['$http', '$scope', '$state', function($http, $scope, $state) {
   angular.element(document).ready(function () {
     // TWITTER EMBED
     !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
@@ -88,3 +87,10 @@ angular.module('Spoilers.controllers', [])
 
   });
 }])
+
+// app.controller('statsController', ['$http', '$scope', '$state', function($http, $scope, $state, hostFactory) {
+//   angular.element(document).ready(function () {
+//
+//
+//   });
+// }])

@@ -1,4 +1,4 @@
-angular.module('Spoilers', ['ui.router', 'Spoilers.controllers'])
+var app = angular.module('Spoilers', ['ui.router'])
 
 .config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
   $urlRouterProvider.otherwise('home');
@@ -27,5 +27,11 @@ angular.module('Spoilers', ['ui.router', 'Spoilers.controllers'])
       templateUrl: '/views/contact.html',
       controller: 'contactController',
       controllerAs: 'contact'
+    })
+    .state('stats', {
+      url: '/SpoilersHOF',
+      templateUrl: '/views/stats.html',
+      controller: 'statsController',
+      controllerAs: 'stats'
     })
 }])

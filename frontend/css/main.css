@@ -157,6 +157,14 @@ h1{
 .bio-modal-stat-col{
   color: #757575;
 }
+.bioStatCategory{
+  font-size: 1.25em;
+  font-weight: 800;
+}
+.bioStats{
+  font-weight: 400;
+  color: #2196F3;
+}
 /*END BIO PAGE*/
 
 
