@@ -7,10 +7,10 @@ app.controller('statsController', ['$scope', function($scope) {
               type: 'bar'
           },
           title: {
-              text: 'Quickshot Stats Test'
+              text: 'Spoilers! Hosts Quickshot Stats'
           },
           subtitle: {
-              text: 'Source: <a href="https://en.wikipedia.org/wiki/World_population">Wikipedia.org</a>'
+              text: ''
           },
           xAxis: {
               categories: ['Pappy', 'Stevie', '$ Mike', 'Vints'],
