@@ -4,63 +4,69 @@ app.controller('statsController', ['$scope', function($scope) {
 
       Highcharts.chart('container', {
           chart: {
-              type: 'bar'
+            type: 'bar'
           },
           title: {
-              text: 'Spoilers! Hosts Quickshot Stats'
+            text: 'Spoilers! Hosts Quick-Stats',
+            style: {
+              fontWeight: 'bold',
+              fontSize: '2em'
+            }
           },
           subtitle: {
-              text: ''
+            text: ''
           },
           xAxis: {
-              categories: ['Pappy', 'Stevie', '$ Mike', 'Vints'],
-              title: {
-                  text: null
-              }
+            categories: ['Pappy', 'Stevie', '$ Mike', 'Vints'],
+            title: {
+              text: null
+            }
           },
           yAxis: {
-              min: 0,
-              title: {
-                  text: '',
-                  align: 'high'
-              },
-              labels: {
-                  overflow: 'justify'
-              }
+            min: 0,
+            title: {
+              text: '',
+              align: 'high'
+            },
+            labels: {
+              overflow: 'justify'
+            }
           },
           tooltip: {
-              valueSuffix: ' '
+            valueSuffix: ' ',
+            borderWidth: 0,
+            pointFormat: '{series.name}: <b>{point.y}</b>'
           },
           plotOptions: {
-              bar: {
-                  dataLabels: {
-                      enabled: true
-                  }
+            bar: {
+              dataLabels: {
+                enabled: true
               }
+            }
           },
           legend: {
-              layout: 'vertical',
-              align: 'right',
-              verticalAlign: 'top',
-              x: -40,
-              y: 80,
-              floating: true,
-              borderWidth: 1,
-              backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
-              shadow: true
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: -10,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
           },
           credits: {
-              enabled: false
+            enabled: false
           },
           series: [{
-              name: 'Appearances',
-              data: [25, 23, 23, 23]
+            name: 'Appearances',
+            data: [25, 23, 23, 23]
           }, {
-              name: 'Trivia Wins',
-              data: [5, 10, 4, 4]
+            name: 'Trivia Wins',
+            data: [5, 10, 4, 4]
           }, {
-              name: "Yes's Received",
-              data: [22, 17, 13, 15]
+            name: "Yes's Received",
+            data: [22, 17, 13, 15]
           }]
       });
 

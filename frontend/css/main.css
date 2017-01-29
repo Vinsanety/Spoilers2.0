@@ -262,6 +262,12 @@ h1{
 
 
 /*START STATS PAGE*/
+.highcharts-title text{
+  font-size: 32px;
+}
+.highcharts-tooltip>span{
+  border: 2px solid silver;
+}
 .highcharts-color-0 .highcharts-point{
   fill: #2196F3;
 }
