@@ -25,8 +25,6 @@ app.controller('bioController', ['$http', '$scope', '$state', function($http, $s
        dismissible: true, // Modal can be dismissed by clicking outside of the modal
     });
 
-    console.log($scope.hostFactory);
-
   })
 }])
 
@@ -38,15 +36,25 @@ app.controller('moviesController', ['$http', '$scope', '$state', function($http,
     //Scope array of objects to populate thumbnails
     $scope.movieCollection = [];
     console.log($scope.movieCollection);
-    //Made titleCollection for the autocomplete work *unfinished*
-    $scope.titleCollection = {};
-    console.log($scope.titleCollection);
 
+    //TitleCollection for the autocomplete work *unfinished*
+    $scope.titleCollection = {};
+    // console.log($scope.titleCollection);
+
+    // Adding playable iframe to each card *unfinished*
+    $scope.track_id_Collection = [];
+    $scope.iframeSRC_Collection = [];
     for (var i = 0; i < data.length; i++) {
-      $scope.stream_url = data[i].stream_url;
-      // $scope.movieCollection['stream_url'] = $scope.stream_url;
-      console.log($scope.stream_url);
+      var track_id = data[i].id;
+      $scope.track_id_Collection.push(track_id);
+      var movies_iframeSRC = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/" + $scope.track_id_Collection[i] + "&amp;color=ff5500&amp;inverse=false&amp;auto_play=false&amp;show_user=true";
+      $scope.iframeSRC_Collection.push(movies_iframeSRC);
     }
+    // for (var i = 0; i < $scope.movieCollection.length; i++) {
+    //   console.log($scope.movieCollection[i]);
+    // }
+    $scope.movieCollection.src = $scope.iframeSRC_Collection;
+
 
     // AUTOCOMPLETE FOR SEARCH
     $('input.autocomplete').autocomplete({
@@ -65,7 +73,7 @@ app.controller('moviesController', ['$http', '$scope', '$state', function($http,
       // console.log(title);
 
       // Accessing OMDB, using the split title from above:
-      $http.get('https://www.omdbapi.com/?t='+title).then(function (movie) {
+      $http.get('http://www.omdbapi.com/?t='+title).then(function (movie) {
       // variable to access the API object
         var movieData = movie.data;
         //Pushes movie data object into array movieCollection and adds a holder image if Poster doesn't exist within API

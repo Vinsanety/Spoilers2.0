@@ -1,6 +1,5 @@
 app.controller('statsController', ['$scope', function($scope) {
   angular.element(document).ready(function () {
-  console.log('test');
 
       Highcharts.chart('container', {
           chart: {
