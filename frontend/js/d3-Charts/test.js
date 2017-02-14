@@ -1,12 +1,12 @@
 app.controller('statsController', ['$scope', function($scope) {
   angular.element(document).ready(function () {
 
-      Highcharts.chart('container', {
+      Highcharts.chart('host_Overview_Stats', {
           chart: {
             type: 'bar'
           },
           title: {
-            text: 'Spoilers! Hosts Quick-Stats',
+            text: 'Spoilers! Hosts',
             style: {
               fontWeight: 'bold',
               fontSize: '2em'
@@ -73,6 +73,54 @@ app.controller('statsController', ['$scope', function($scope) {
             data: [22, 17, 13, 15]
           }]
       });
+
+      Highcharts.chart('hosting_pie', {
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: 'Episodes Hosted'
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.y}</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: false
+                },
+                showInLegend: true
+            }
+        },
+        series: [{
+            name: 'Hosts',
+            colorByPoint: true,
+            data: [{
+                name: 'Pappy',
+                y: 8,
+                // Add this to the highest number
+                sliced: true,
+                selected: true
+            }, {
+                name: 'Stevie',
+                y: 6,
+            }, {
+                name: 'Money Mike',
+                y: 4
+            }, {
+                name: 'Vints the Intern',
+                y: 4
+            }, {
+                name: 'JOrda',
+                y: 3
+            }]
+        }]
+    });
 
   });
 }])

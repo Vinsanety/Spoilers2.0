@@ -41,26 +41,28 @@ app.controller('moviesController', ['$http', '$scope', '$state', function($http,
     $scope.titleCollection = {};
     // console.log($scope.titleCollection);
 
-    // Adding playable iframe to each card *unfinished*
-    // $scope.track_id_Collection = [];
-    // $scope.iframeSRC_Collection = [];
-    // for (var i = 0; i < data.length; i++) {
-    //   var track_id = data[i].id;
-    //   $scope.track_id_Collection.push(track_id);
-    //   var movies_iframeSRC = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/" + $scope.track_id_Collection[i] + "&amp;color=ff5500&amp;inverse=false&amp;auto_play=false&amp;show_user=true";
-    //   $scope.iframeSRC_Collection.push(movies_iframeSRC);
+
+    // START Adding playable iframe to each card *unfinished*
+    $scope.track_id_Collection = [];
+    $scope.iframeSRC_Collection = [];
+    for (var i = 0; i < data.length; i++) {
+      var track_id = data[i].id;
+      $scope.track_id_Collection.push(track_id);
+      var movies_iframeSRC = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/" + $scope.track_id_Collection[i] + "&amp;color=ff5500&amp;inverse=false&amp;auto_play=false&amp;show_user=true";
+      $scope.iframeSRC_Collection.push(movies_iframeSRC);
+    }
+    // for (var i = 0; i < $scope.movieCollection.length; i++) {
+    //   console.log($scope.movieCollection[i]);
     // }
-    // // for (var i = 0; i < $scope.movieCollection.length; i++) {
-    // //   console.log($scope.movieCollection[i]);
-    // // }
-    // $scope.movieCollection.src = $scope.iframeSRC_Collection;
+    $scope.movieCollection.src = $scope.iframeSRC_Collection;
+    // END Adding SRC playable iframe *unfinished*
 
 
     // AUTOCOMPLETE FOR SEARCH
     $('input.autocomplete').autocomplete({
         data: {
-          "Apple": null,
-          "Google": null,
+          // "Apple": null,
+          // "Google": null,
           "Time Bandits": 'http://ia.media-imdb.com/images/M/MV5BMTg2MDYwMzM0NF5BMl5BanBnXkFtZTcwODI3MTQ5OQ@@._V1_SX300.jpg'
         }
       });
