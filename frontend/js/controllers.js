@@ -91,7 +91,7 @@ app.controller('moviesController', ['$http', '$scope', '$state', function($http,
         })
       })
     })
-  }
+  });
 }])
 
 app.controller('contactController', ['$http', '$scope', '$state', function($http, $scope, $state) {
