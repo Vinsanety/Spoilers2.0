@@ -1,5 +1,6 @@
 app.controller('statsController', ['$scope', function($scope) {
   angular.element(document).ready(function () {
+    $(this).scrollTop(0);
 
       Highcharts.chart('host_Overview_Stats', {
           chart: {
