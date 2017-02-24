@@ -1,6 +1,23 @@
-app.controller('statsController', ['$scope', function($scope) {
+app.controller('statsController', ['$scope', '$http', function($scope, $http) {
   angular.element(document).ready(function () {
     $(this).scrollTop(0);
+
+    $http.get('https://api.soundcloud.com/playlists/235506624?client_id=f4f2237e0ee1500764af3532c6bc5e13').then(function(data) {
+      var data = data.data.tracks;
+      $scope.movieCollection = [];
+      console.log($scope.movieCollection);
+      $(data).each(function(i) {
+        var titleSplit = data[i].title.split(' -');
+        var title = titleSplit[0];
+        $http.get('https://www.omdbapi.com/?t='+title).then(function (movie) {
+          var movieData = movie.data;
+            if (movieData.Poster === 'N/A') {
+              movieData.Poster = 'images/Confused-Travolta.gif'
+            }
+          $scope.movieCollection.push(movieData);
+        })
+      })
+    })
 
       Highcharts.chart('host_Overview_Stats', {
           chart: {
@@ -122,6 +139,39 @@ app.controller('statsController', ['$scope', function($scope) {
             }]
         }]
     });
-
+      Highcharts.chart('movie_Rating', {
+        chart: {
+            type: 'column',
+            options3d: {
+                enabled: true,
+                alpha: 10,
+                beta: 25,
+                depth: 70
+            }
+        },
+        title: {
+            text: 'Movie Ratings Distribution'
+        },
+        subtitle: {
+            text: 'Fuck PG & G Movies, amiright?'
+        },
+        plotOptions: {
+            column: {
+                depth: 25
+            }
+        },
+        xAxis: {
+            categories: ['R', 'PG-13', 'PG', 'G']
+        },
+        yAxis: {
+            title: {
+                text: null
+            }
+        },
+        series: [{
+            name: '# of movies',
+            data: [7, 5, 3, 1]
+        }]
+    });
   });
 }])
