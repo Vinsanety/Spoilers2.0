@@ -306,3 +306,19 @@ h1{
   text-align: center;
   color: #757575;
 }
+
+
+
+/*OSCAR PICK EM*/
+.oscarCardTitle{
+  color: #42a5f5;
+}
+.oscarHeader{
+  color: #f9a825;
+}
+.oscar_subhead{
+  color: #757575;
+}
+#oscarRules{
+  color: #42a5f5;
+}
