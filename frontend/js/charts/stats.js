@@ -131,10 +131,10 @@ app.controller('statsController', ['$scope', '$http', function($scope, $http) {
                 name: 'Money Mike',
                 y: 4
             }, {
-                name: 'Vints the Intern',
+                name: 'Vints',
                 y: 4
             }, {
-                name: 'JOrda',
+                name: 'Jorda',
                 y: 3
             }]
         }]
