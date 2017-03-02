@@ -328,3 +328,27 @@ h1{
 .OscarCategory{
   color: #f9a825;
 }
+.oscarWinnerCard{
+  /*box-shadow: 0 2.5px 10px 2.5px rgb(249, 168, 37)!important;*/
+}
+.oscarWinnerCard:hover{
+  box-shadow: 0 5px 20px 5px rgb(249, 168, 37)!important;
+}
+#oscarwWinnerimage {
+  position: relative;
+  width: 100%; /* for IE 6 */
+}
+#oscarWinnerText {
+  position: absolute;
+  top: 250px;
+  left: 0;
+  width: 100%;
+}
+#oscarWinnerText span {
+   color: white;
+   font: bold 24px/45px Helvetica, Sans-Serif;
+   letter-spacing: -1px;
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px;
+}
