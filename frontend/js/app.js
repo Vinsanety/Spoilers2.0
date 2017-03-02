@@ -6,9 +6,9 @@ var app = angular.module('Spoilers', ['ui.router'])
   $stateProvider
     .state('home', {
       url: '/home',
-      templateUrl: '/views/oscarPickEm.html',
-      controller: 'oscarController',
-      controllerAs: 'oscar'
+      templateUrl: '/views/home.html',
+      controller: 'homeController',
+      controllerAs: 'home'
     })
     .state('bio', {
       url: '/bio',
@@ -33,5 +33,11 @@ var app = angular.module('Spoilers', ['ui.router'])
       templateUrl: '/views/stats.html',
       controller: 'statsController',
       controllerAs: 'stats'
+    })
+    .state('Oscar-Pick-Em-17', {
+      url: '/Oscar-Pick-Em-17',
+      templateUrl: '/views/oscarPickEm.html',
+      controller: 'oscarController',
+      controllerAs: 'oscar'
     })
 }])
