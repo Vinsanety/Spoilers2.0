@@ -170,7 +170,7 @@ app.controller('statsController', ['$scope', '$http', function($scope, $http) {
         },
         series: [{
             name: '# of movies',
-            data: [7, 5, 3, 1]
+            data: [30, 14, 8, 0]
         }]
     });
   });
