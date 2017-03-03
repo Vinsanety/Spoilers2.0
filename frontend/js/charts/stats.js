@@ -115,6 +115,9 @@ app.controller('statsController', ['$scope', '$http', function($scope, $http) {
                 showInLegend: true
             }
         },
+        credits: {
+          enabled: false
+        },
         series: [{
             name: 'Hosts',
             colorByPoint: true,
@@ -167,6 +170,9 @@ app.controller('statsController', ['$scope', '$http', function($scope, $http) {
             title: {
                 text: null
             }
+        },
+        credits: {
+          enabled: false
         },
         series: [{
             name: '# of movies',
