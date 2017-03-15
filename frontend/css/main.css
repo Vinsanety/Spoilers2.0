@@ -3,7 +3,7 @@
 }
 body{
   /*font-family: "ITC Benguiat";*/
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Gloria Hallelujah', Courier;
 }
 h1{
   color: #f9a825;
@@ -135,7 +135,7 @@ h1{
 }
 #favFooterRow{
   margin: 0;
-  padding: 1em 0 2em 0;
+  padding: 1em 0;
 }
 #favFooterRow img{
   -webkit-transition: -webkit-transform 0.4s ease;
@@ -154,7 +154,7 @@ h1{
 #homeFooterHeader{
   color: #f9a825;
   margin: 0;
-  padding-top: .5em;
+  padding: .5em 0 0 0;
 }
 .favLinksList-ul a:hover{
   color: #f9a825 !important;
