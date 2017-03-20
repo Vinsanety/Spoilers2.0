@@ -214,7 +214,8 @@ app.controller('moviesController', ['$http', '$scope', '$state', function($http,
 
       //Scope array of objects to populate thumbnails
       $scope.movieCollection = [];
-      console.log($scope.movieCollection);
+      // console.log($scope.movieCollection);
+
 
       //TitleCollection for the autocomplete work *unfinished*
       $scope.titleCollection = {};

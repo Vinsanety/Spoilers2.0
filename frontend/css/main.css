@@ -8,6 +8,12 @@ body{
 h1{
   color: #f9a825;
 }
+hr{
+  background-color: #757575 !important;
+}
+#newestEpMarginTop{
+  height: 4px;
+}
 
 /*Newest Ep! Navbar iframe*/
 .navbar-fixed{
@@ -167,6 +173,16 @@ h1{
 
 
 /*BIO PAGE*/
+/*.bioModal{
+  max-width: 85% !important;
+  height: 85% !important;
+  width: 75% !important;
+}*/
+@media only screen and (max-width: 414px) {
+  .bioFrame{
+    /*height: 200px !important;*/
+  }
+}
 #bio-crew-header{
   color: #757575;
 }
@@ -194,6 +210,7 @@ h1{
 }
 .bio-modal-header{
   color: #f9a825;
+  margin-bottom: 1em;
 }
 .bio-modal-stat-col{
   color: #757575;
@@ -324,32 +341,6 @@ h1{
 /*END STATS PAGE*/
 
 
-
-/*FOOTER*/
-#footer{
-  background-color: #9e9e9e;
-  /*background-color: #757575;*/
-  margin-top: 0;
-  padding-top: 0;
-}
-#VahalaDesignsLink{
-  color: #f5f5f5;
-}
-#VahalaDesignsLink:hover{
-  color: #2196F3;
-}
-#math-teacher-mark{
-  font-size: 10px;
-  letter-spacing: 2px;
-}
-.footer-text{
-  margin-top: 1%;
-  text-align: center;
-  color: #757575;
-}
-
-
-
 /*OSCAR PICK EM '17*/
 .oscarCardTitle{
   color: #42a5f5;
@@ -386,10 +377,34 @@ h1{
   width: 100%;
 }
 #oscarWinnerText span {
-   color: white;
-   font: bold 24px/45px Helvetica, Sans-Serif;
-   letter-spacing: -1px;
-   background: rgb(0, 0, 0); /* fallback color */
-   background: rgba(0, 0, 0, 0.7);
-   padding: 10px;
+  color: white;
+  font: bold 24px/45px Helvetica, Sans-Serif;
+  letter-spacing: -1px;
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}
+
+
+/*FOOTER*/
+#footer{
+  background-color: #9e9e9e;
+  /*background-color: #757575;*/
+  margin-top: 0;
+  padding-top: 0;
+}
+#VahalaDesignsLink{
+  color: #f5f5f5;
+}
+#VahalaDesignsLink:hover{
+  color: #2196F3;
+}
+#math-teacher-mark{
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+.footer-text{
+  margin-top: 1%;
+  text-align: center;
+  color: #757575;
 }
