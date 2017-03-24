@@ -141,7 +141,7 @@ hr{
 }
 #favFooterRow{
   margin: 0;
-  padding: 1em 0;
+  padding: 1em 0 1.5em 0;
 }
 #favFooterRow img{
   -webkit-transition: -webkit-transform 0.4s ease;

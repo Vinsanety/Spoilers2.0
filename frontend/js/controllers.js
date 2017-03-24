@@ -191,6 +191,7 @@ app.controller('homeController', ['$http', '$scope', '$state', function($http, $
     }
   ];
   Materialize.scrollFire(options);
+  $('.tooltipped').tooltip();
 
   })
 }])
