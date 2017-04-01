@@ -286,9 +286,12 @@ hr{
 #contactHeader{
   color: #f9a825;
 }
-.contactList{
+.contactList a{
   color: #757575;
   list-style: none;
+}
+.contactList a:hover{
+  color: #2196F3;
 }
 .contact-links-List{
   list-style: none;
