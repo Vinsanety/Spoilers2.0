@@ -177,6 +177,9 @@ app.controller('homeController', ['$http', '$scope', '$state', function($http, $
   angular.element(document).ready(function () {
     $(this).scrollTop(0);
     $('.parallax').parallax();
+    $('.modal-trigger').leanModal({
+      dismissible: true,
+    });
 
   var options = [
     {

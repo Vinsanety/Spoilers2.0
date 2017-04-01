@@ -14,6 +14,12 @@ hr{
 #newestEpMarginTop{
   height: 4px;
 }
+.hidden{
+  display: none;
+}
+.verticalLine {
+  border-right: dotted #f9a825;
+}
 
 /*Newest Ep! Navbar iframe*/
 .navbar-fixed{
@@ -133,41 +139,49 @@ hr{
 }
 
 
-#ourFavsHomeFooter{
+#findUsHomeFooter{
   background-color: #2196F3;
   height: auto;
   font-size: 16px;
   font-weight: 500;
 }
-#favFooterRow{
+#findUsFooterHeader{
+  color: #f9a825;
+  margin: 0;
+  padding: .5em 0 0 0;
+}
+#findUsFooterRow{
   margin: 0;
   padding: 1em 0 1.5em 0;
 }
-#favFooterRow img{
+#findUsFooterRow img{
   -webkit-transition: -webkit-transform 0.4s ease;
   -moz-transition: -moz-transform 0.4s ease;
   -o-transition: -o-transform 0.4s ease;
   transition: transform 0.4s ease;
   border-radius: 150px;
 }
-#favFooterRow img:hover{
+#findUsFooterRow img:hover{
   -webkit-transform: scale(1.05);
   -moz-transform: scale(1.05);
   -ms-transform: scale(1.05);
   -o-transform: scale(1.05);
   transform: scale(1.1);
 }
-#homeFooterHeader{
+.findUsImg{
+  /*max-height: 300px;
+  max-width: 300px;*/
+}
+.iconModalHeader{
   color: #f9a825;
-  margin: 0;
-  padding: .5em 0 0 0;
+  word-wrap: break-word;
+  text-align: center;
 }
-.favLinksList-ul a:hover{
-  color: #f9a825 !important;
+.iconModalHeader a{
+  color: #f9a825;
 }
-.ourFavImg{
-  max-height: 300px;
-  max-width: 300px;
+.iconModalHeader a:hover{
+  color: #42a5f5;
 }
 /*END HOME PAGE*/
 
@@ -383,6 +397,9 @@ hr{
   background: rgb(0, 0, 0); /* fallback color */
   background: rgba(0, 0, 0, 0.7);
   padding: 10px;
+}
+.winnerCards .card-content{
+  padding: 0 20px 10px 20px !important;
 }
 
 
