@@ -405,6 +405,14 @@ hr{
   padding: 0 20px 10px 20px !important;
 }
 
+/*COLLECTIONS*/
+.collectionsTitle{
+  margin-bottom: .6em;
+  color: #9E9E9E;
+}
+
+/*END COLLECTIONS*/
+
 
 /*FOOTER*/
 #footer{
@@ -432,4 +440,71 @@ hr{
   margin-top: 1%;
   text-align: center;
   color: #757575;
+}
+
+
+/*SCROLL ON CREDITS*/
+.creditsContainers {
+  font-family: ;
+}
+.scroll-up {
+  height: 75vh;
+  overflow: hidden;
+  position: relative;
+  background: white;
+  color: #2196F3;
+  border-top: 1px dotted #f9a825;
+  border-bottom: 1px dotted #f9a825;
+}
+.scroll-up span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  /*line-height: 50px;*/
+  text-align: center;
+  /* Starting position */
+  -moz-transform:translateY(100%);
+  -webkit-transform:translateY(100%);
+  transform:translateY(100%);
+  /* Apply animation to this element */
+  -moz-animation: scroll-up 100s linear infinite;
+  -webkit-animation: scroll-up 100s linear infinite;
+  animation: scroll-up 100s linear infinite;
+}
+.scroll-up > span > div > h2, .scroll-up > span > div > h3, .scroll-up > span > div > h4, .scroll-up > span > div > h5, .scroll-up > span > div > h6{
+  margin: 0;
+}
+.scroll-up > span > div > h5, .scroll-up > span > div > h6{
+  text-transform: uppercase;
+  color: #9E9E9E;
+  font-weight: 900;
+}
+.scroll-up h3 > a:hover{
+  color: #f9a825;
+}
+.credits-H5-Blue{
+  color: #2196F3 !important;
+  text-transform: lowercase !important;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-up {
+  0% { -moz-transform: translateY(100%); }
+  100% { -moz-transform: translateY(-950%); }
+}
+@-webkit-keyframes scroll-up {
+  0% { -webkit-transform: translateY(100%); }
+  100% { -webkit-transform: translateY(-950%); }
+}
+@keyframes scroll-up {
+  0% {
+    -moz-transform: translateY(100%); /* Browser bug fix */
+    -webkit-transform: translateY(100%); /* Browser bug fix */
+    transform: translateY(100%);
+  }
+  100% {
+    -moz-transform: translateY(-100%); /* Browser bug fix */
+    -webkit-transform: translateY(-100%); /* Browser bug fix */
+    transform: translateY(-950%);
+  }
 }

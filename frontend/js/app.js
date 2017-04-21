@@ -40,4 +40,16 @@ var app = angular.module('Spoilers', ['ui.router'])
       controller: 'oscarController',
       controllerAs: 'oscar'
     })
+    // .state('credits', {
+    //   url: '/credits',
+    //   templateUrl: '/views/credits.html',
+    //   controller: 'creditsController',
+    //   controllerAs: 'credits'
+    // })
+    .state('collections', {
+      url: '/collections',
+      templateUrl: '/views/collections.html',
+      controller: 'collectionsController',
+      controllerAs: 'collections'
+    })
 }])

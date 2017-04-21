@@ -220,7 +220,6 @@ app.controller('moviesController', ['$http', '$scope', '$state', function($http,
       $scope.movieCollection = [];
       // console.log($scope.movieCollection);
 
-
       //TitleCollection for the autocomplete work *unfinished*
       $scope.titleCollection = {};
       // console.log($scope.titleCollection);
@@ -280,6 +279,20 @@ app.controller('contactController', ['$http', '$scope', '$state', function($http
     // TWITTER EMBED
     !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 
+
+  });
+}])
+
+// app.controller('creditsController', ['$http', '$scope', '$state', function($http, $scope, $state) {
+//   angular.element(document).ready(function () {
+//     $(this).scrollTop(0);
+//
+//   });
+// }])
+
+app.controller('collectionsController', ['$http', '$scope', '$state', function($http, $scope, $state) {
+  angular.element(document).ready(function () {
+    $(this).scrollTop(0);
 
   });
 }])
