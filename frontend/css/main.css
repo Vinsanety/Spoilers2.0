@@ -32,9 +32,18 @@ hr{
   filter: opacity(.75);
 }
 #latestEpisodeTitle{
+  font-size: 20px;
   color: #f9a825;
   margin: 0 0 0 1em;
   padding: 0;
+}
+@media screen and (max-width:320px){
+  #latestEpisodeTitle{
+    font-size: 16px;
+    color: #f9a825;
+    margin: 0 0 0 1em;
+    padding: 0;
+  }
 }
 
 
@@ -76,19 +85,29 @@ hr{
   /*height: 50vh;*/
   height: auto;
 }
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 736px) {
   #home-para-banner {
-    height: 70vh;
+    height: 75vh;
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 667px) {
   #home-para-banner {
-    height: 65vh;
+    height: 90vh;
   }
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 414px) {
+  #home-para-banner {
+    height: 50vh;
+  }
+}
+@media only screen and (max-width: 375px) {
   #home-para-banner {
     height: 60vh;
+  }
+}
+@media only screen and (max-width: 320px) {
+  #home-para-banner {
+    height: 65vh;
   }
 }
 #home-soundcloud-div{
@@ -336,6 +355,14 @@ hr{
 /*END CONTACT PAGE*/
 
 
+/*COLLECTIONS*/
+.collectionsTitle{
+  margin-bottom: .6em;
+  color: #9E9E9E;
+}
+/*END COLLECTIONS*/
+
+
 /*START STATS PAGE*/
 .highcharts-container{
   margin-top: 3em;
@@ -405,14 +432,6 @@ hr{
   padding: 0 20px 10px 20px !important;
 }
 
-/*COLLECTIONS*/
-.collectionsTitle{
-  margin-bottom: .6em;
-  color: #9E9E9E;
-}
-
-/*END COLLECTIONS*/
-
 
 /*FOOTER*/
 #footer{
@@ -441,6 +460,8 @@ hr{
   text-align: center;
   color: #757575;
 }
+
+
 
 
 /*SCROLL ON CREDITS*/
