@@ -266,6 +266,14 @@ hr{
   margin: 0;
   padding: 0;
 }
+#moviesCategories{
+  margin: 1em .5em 1em 0;
+}
+@media (min-width: 993px){
+  #moviesCategories{
+    margin-top: 0;
+  }
+}
 #movie-thumbnailPic{
   margin-left: auto;
   margin-right: auto;
