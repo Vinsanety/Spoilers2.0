@@ -45,6 +45,9 @@ hr{
     padding: 0;
   }
 }
+#latestEpTitle{
+  font-size: 18px;
+}
 
 
 /*NAV BAR*/
