@@ -63,10 +63,8 @@ hr{
 #side-nav-menu-icon{
   margin-left: 2%;
 }
-
-/*Uncomment below width when uncment topNavDrop External Links */
-#topNavDrop{
-  /*width: auto !important;*/
+#slide-out > li.no-padding > ul > li > div > ul > li > a{
+  width: 241px;
 }
 /*END NAV BAR*/
 
