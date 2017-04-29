@@ -140,6 +140,30 @@ hr{
   width: 100%;
   height: auto;
 }
+
+#spoilersBoxOffice{
+  color: #42a5f5;
+}
+.latest5Titles{
+  color: #757575;
+  border-right: 3px dotted #42a5f5;
+  padding: 0 1.5em 0 1em;
+}
+.latest5Titles:hover{
+  text-shadow: 1px 1px #42a5f5;
+  font-weight: 400;
+}
+#title{
+  color: #f9a825;
+}
+#title5{
+  border: none;
+}
+#carouselLatest5{
+  margin: -5em 0 2em 0;
+  z-index: 0;
+}
+
 #home-quote-header{
   color: #42a5f5;
 }
