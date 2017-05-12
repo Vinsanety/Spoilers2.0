@@ -6,7 +6,7 @@ $(document).ready(function(){
     var latestTitle = latestMovieTitleSplit[0];
     $('#latestEpTitle').html(latestTitle);
 
-    var latestSRC = "https://w.soundcloud.com/player/?url=" + latestMovie.uri + "&amp;color=ff5500&amp;inverse=true&amp;auto_play=false&amp;show_user=truelatestMovie"
+    var latestSRC = "https://w.soundcloud.com/player/?url=" + latestMovie.uri + "&amp;color=ff5500&amp;inverse=true&amp;auto_play=false&amp;show_user=false&amp"
     console.log(latestSRC);
 
     $('#latestEpFrame').attr("src", latestSRC)

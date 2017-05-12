@@ -154,15 +154,46 @@ hr{
   font-weight: 400;
 }
 #title{
-  color: #f9a825;
+  color: #f9a825 !important;
 }
 #title5{
   border: none;
 }
 #carouselLatest5{
-  margin: -5em 0 2em 0;
+  margin: -7em 0 1em 0;
   z-index: 0;
 }
+#latest5Table{
+  margin-bottom: 2em;]
+}
+#latest5Table th{
+  color: #42a5f5;
+}
+#latest5Table td{
+  color: #757575;
+}
+#title{
+  color: #f9a825;
+}
+#latest5Table > thead > tr > th{
+  text-align: center;
+}
+#latest5Table > thead > tr > th:nth-child(2){
+  text-align: left;
+}
+#latest5Table > tbody > tr > td{
+  text-align: center;
+}
+#latest5Table > tbody > tr > td:nth-child(2){
+  text-align: left;
+}
+#latest5SoundCloud{
+  color: #f9a825;
+}
+#latest5SoundCloud:hover{
+  color: #42a5f5;
+}
+
 
 #home-quote-header{
   color: #42a5f5;
