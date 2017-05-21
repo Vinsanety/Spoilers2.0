@@ -5,7 +5,7 @@ var app = angular.module('Spoilers', ['ui.router'])
   $locationProvider.html5Mode(true);
   $stateProvider
     .state('home', {
-      url: '/home',
+      url: '/',
       templateUrl: '/views/home.html',
       controller: 'homeController',
       controllerAs: 'home'
@@ -29,7 +29,7 @@ var app = angular.module('Spoilers', ['ui.router'])
       controllerAs: 'contact'
     })
     .state('stats', {
-      url: '/SpoilersHOF',
+      url: '/stats',
       templateUrl: '/views/stats.html',
       controller: 'statsController',
       controllerAs: 'stats'

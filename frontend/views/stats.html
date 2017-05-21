@@ -8,20 +8,84 @@
     </div>
   </div>
 
-    <div class='row'>
+  <div class="row">
+    <div class='col s12 m7 l7' id="host_Overview_Stats" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
+    <div class='col s12 m5 l5' id="hosting_pie" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
+  </div>
 
-      <ul ng-controller="hostFactory">
-        <!-- <li class='center' ng-repeat='host in hostFactory'>{{host.name}}</li> -->
-      </ul>
+  <br><br>
 
-      <br>
-      <div class='col s12 m7 l7' id="host_Overview_Stats" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
-      <div class='col s12 m5 l5' id="hosting_pie" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
+  <div class="row">
+    <div class='col s12 m6 l6' id="yesRec_vs_noRec" style="min-width: 310px; height: 400px; max-width: 800px; margin: 0 auto"></div>
+    <div class='col s12 m6 l6' id="yesGiven_vs_noGiven" style="min-width: 310px; height: 400px; max-width: 800px; margin: 0 auto"></div>
+  </div>
+  <br><br>
+  <div class="row">
+    <div class="col s12 m12 l12">
+      <table class="responsive-table striped" id="yes_no_table">
+        <thead>
+          <tr>
+            <th class="center">Name</th>
+            <th class="center">Yes Received</th>
+            <th class="center">No Received</th>
+            <th class="center">Yes Given</th>
+            <th class="center">No Given</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pappy</td>
+            <td>80.49%</td>
+            <td>19.51%</td>
+            <td>70.18%</td>
+            <td>29.82%</td>
+          </tr>
+          <tr>
+            <td>Stevie</td>
+            <td>76.47%</td>
+            <td>23.53%</td>
+            <td class="yes_no_categoryLeader">78.85%</td>
+            <td>21.15%</td>
+          </tr>
+          <tr>
+            <td>$Mikey</td>
+            <td>74.07%</td>
+            <td>25.93%</td>
+            <td>75.61%</td>
+            <td>24.39%</td>
+          </tr>
+          <tr>
+            <td>Vints</td>
+            <td class="yes_no_categoryLeader">80.77%</td>
+            <td>19.23%</td>
+            <td>58.82%</td>
+            <td>41.18%</td>
+          </tr>
+          <tr>
+            <td>JordN</td>
+            <td>58.33%</td>
+            <td class="yes_no_categoryLeader">41.67%</td>
+            <td>47.62%</td>
+            <td class="yes_no_categoryLeader">52.38%</td>
+          </tr>
+          <tr>
+            <td>Joshua</td>
+            <td>60.00%</td>
+            <td>40.00%</td>
+            <td>66.67%</td>
+            <td>33.33%</td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="hide-on-med-and-up right" style="color:#757575">Scroll on mobile</span>
     </div>
+  </div>
 
-    <br><br>
-    <div id="movie_Rating" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
+  <br>
+
+  <div id="movie_Rating" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
 
   <br><br><br>
 
+  </div>
 </div>
