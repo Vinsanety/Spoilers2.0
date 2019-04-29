@@ -1,6 +1,6 @@
 # Spoilers2.0
 
-## Visit [Spoilers!](https://PodcastSpoilers.com)
+## Visit [Spoilers!](https://podcastspoilers-dd5b5.firebaseapp.com/)
 
 Spoilers! is a movie podcast that reviews new and old film.
 
